@@ -1,0 +1,83 @@
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Oswald">
+<style>
+ main {
+    padding-bottom:10px;
+	padding-left:400px;
+	padding-right:400px;
+	padding-top:10px;
+     background-color: gray;
+	 font-size : 14px;
+	 font-family:Oswald;
+}
+
+.label{
+text-align:left;
+}
+
+</style>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<main >
+
+<h1 id="title">free CodeCamp Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+<form id="survey-form">
+<label id="name-label" class="label" >Name</label><br></br>
+    <input id="name" placeholder="Enter Your Name" type="text" required ><br></br>
+<label id="email-label" class="label">Email</label><br></br>
+    <input id="email" placeholder="Enter Your Email"type="email" required ><br></br>
+<label id="number-label"class="label" >Age(optional)</label><br></br>
+    <input id="number" min="18" max="99" placeholder="Age" type="number"><br></br>
+	
+<!-- Dropdown -->
+<label >Which option best describes your current role?</label><br></br>
+<select id="dropdown" >
+  <option default>Select Current Role </option>
+  <option value="Student">Student</option>
+  <option value="FullTimeJob">Full-Time Job</option>
+  <option value="ftlearner">Full Time Learner</option>
+  <option value="Notsay">Prefer Not to Say</option>
+  <option value="other">Other</option>
+</select><br></br>
+<!-- Dropdown  Ends here -->
+
+  <!-- Radio Button -->
+<label>Would you recommend freeCodeCamp to a friend?</label> <br></br>
+  <input type="radio" id="definitely" name="recommend" value="definitely">
+  <label >Definitely</label><br>
+  <input type="radio" id="Maybe" name="recommend" value="Maybe">
+  <label>Maybe</label><br>
+  <input type="radio" id="notsure" name="recommend" value="Notsure">
+  <label>Not Sure</label><br></br>
+ <!-- Radio Button Ends Here -->  
+ 
+ <!-- Dropdown For additional comments -->
+<label >What is your favorite feature of freeCodeCamp?</label><br></br>
+<select id="Favouritedropdown" >
+  <option default>Select an option </option>
+  <option value="challenges">Challenges</option>
+  <option value="projects">Projects</option>
+  <option value="community">Community</option>
+  <option value="opensource">Open Source</option>
+</select><br></br>
+<!-- Dropdown  Ends here -->
+
+  <!-- Check Boxes -->
+<label>What would you like to see improved? (Check all that apply)</label> <br></br>
+  <input type="checkbox" id="definitely" name="improve" value="Front-End Projects">
+  <label >Definitely</label><br>
+  <input type="checkbox" id="BackEndProjects" name="improve" value="BackEnd Projects">
+  <label>Maybe</label><br>
+  <input type="checkbox" id="DataVisualisation" name="improve" value="Data Visualisation">
+  <label>Not Sure</label><br></br>
+ <!-- Check Box Ends Here --> 
+
+<!-- Additional Comments   -->
+<label >Any Comments or Suggestions</label><br></br>
+<textarea rows="4" cols="50" name="comment" >Enter your comments here...</textarea><br></br>
+
+<!-- Additional Comments  Ends here -->
+
+<button id="submit" type="submit" value="submit">Submit</button><br></br>
+</form>
+</main>
